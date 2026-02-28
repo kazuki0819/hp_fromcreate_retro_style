@@ -49,12 +49,12 @@ export const staticWorks: WorkData[] = [
     { id: 25, category: 'youtube-mgmt', title: '【バレンタイン】バズってるチョコ料理人狼', thumbnail: '/images/works/youtube-mgmt-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=NFJxo6469jE' },
     { id: 26, category: 'youtube-mgmt', title: '鼠径ヘルニア日帰り手術のダウンタイムを解説', thumbnail: '/images/works/youtube-mgmt-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=lhX0cD_pEHs' },
     { id: 27, category: 'youtube-mgmt', title: '月収200万円のプロが初心者せどらーをガチ指導', thumbnail: '/images/works/youtube-mgmt-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=W7MNQL4Zz_U' },
-    { id: 28, category: 'sns-domestic', title: 'Masa | 東京カフェ・グルメ（40.7万フォロワー）', thumbnail: '', videoUrl: 'https://www.instagram.com/ma_sa_cafe/', snsPlatform: 'instagram', snsAccount: '@ma_sa_cafe' },
-    { id: 32, category: 'sns-domestic', title: 'ajo.next0（TikTok）', thumbnail: '', videoUrl: 'https://www.tiktok.com/@ajo.next0', snsPlatform: 'tiktok', snsAccount: '@ajo.next0' },
-    { id: 33, category: 'sns-domestic', title: 'japan.sushi.school（TikTok）', thumbnail: '', videoUrl: 'https://www.tiktok.com/@japan.sushi.school', snsPlatform: 'tiktok', snsAccount: '@japan.sushi.school' },
-    { id: 29, category: 'sns-global', title: 'Harry Dhaliwal（41.3万フォロワー）', thumbnail: '', videoUrl: 'https://www.instagram.com/theharrydhaliwal/', snsPlatform: 'tiktok', snsAccount: '@h2hautogroup' },
-    { id: 30, category: 'sns-global', title: 'H2H AUTO GROUP（1.2万フォロワー）', thumbnail: '', videoUrl: 'https://www.instagram.com/h2hautogroup/', snsPlatform: 'tiktok', snsAccount: '@h2hautogroup' },
-    { id: 31, category: 'sns-global', title: 'パゥです🇵🇭（6.4万フォロワー）', thumbnail: '', videoUrl: 'https://www.instagram.com/pau_philippines', snsPlatform: 'tiktok', snsAccount: '@paudesuyon' },
+    { id: 28, category: 'sns-domestic', title: 'Masa | 東京カフェ・グルメ（40.7万フォロワー）', thumbnail: '/works/sns-masa-cafe.png', videoUrl: 'https://www.instagram.com/ma_sa_cafe/', snsPlatform: 'instagram', snsAccount: '@ma_sa_cafe' },
+    { id: 32, category: 'sns-domestic', title: 'ajo.next0（TikTok）', thumbnail: '/works/sns-ajo-next0.png', videoUrl: 'https://www.tiktok.com/@ajo.next0', snsPlatform: 'tiktok', snsAccount: '@ajo.next0' },
+    { id: 33, category: 'sns-domestic', title: 'japan.sushi.school（TikTok）', thumbnail: '/works/sns-japan-sushi-school.png', videoUrl: 'https://www.tiktok.com/@japan.sushi.school', snsPlatform: 'tiktok', snsAccount: '@japan.sushi.school' },
+    { id: 29, category: 'sns-global', title: 'Harry Dhaliwal（41.3万フォロワー）', thumbnail: '/works/sns-harry-dhaliwal.png', videoUrl: 'https://www.instagram.com/theharrydhaliwal/', snsPlatform: 'tiktok', snsAccount: '@h2hautogroup' },
+    { id: 30, category: 'sns-global', title: 'H2H AUTO GROUP（1.2万フォロワー）', thumbnail: '/works/sns-h2h-auto.png', videoUrl: 'https://www.instagram.com/h2hautogroup/', snsPlatform: 'tiktok', snsAccount: '@h2hautogroup' },
+    { id: 31, category: 'sns-global', title: 'パゥです🇵🇭（6.4万フォロワー）', thumbnail: '/works/sns-pau-philippines.png', videoUrl: 'https://www.instagram.com/pau_philippines', snsPlatform: 'tiktok', snsAccount: '@paudesuyon' },
 ];
 
 export const staticBlogPosts: BlogPostData[] = [
