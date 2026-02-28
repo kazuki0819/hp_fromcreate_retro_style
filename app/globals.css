@@ -830,6 +830,44 @@ button {
 }
 
 /* ----------------------------------------
+   SNS Platform Thumbnails
+   ---------------------------------------- */
+.sns-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.sns-thumb-overlay.instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.sns-thumb-overlay.tiktok {
+  background: #010101;
+}
+
+.sns-thumb-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.sns-thumb-icon.tiktok {
+  text-shadow: -2px -2px 0 #FE2C55, 2px 2px 0 #25F4EE;
+}
+
+.sns-thumb-account {
+  font-size: 0.8rem;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+}
+
+/* ----------------------------------------
    Filters
    ---------------------------------------- */
 .filters {

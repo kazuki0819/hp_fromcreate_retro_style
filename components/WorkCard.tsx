@@ -6,6 +6,8 @@ interface WorkCardProps {
     title: string;
     thumbnail?: string | null;
     videoUrl?: string | null;
+    snsPlatform?: 'instagram' | 'tiktok';
+    snsAccount?: string;
 }
 
 const categoryLabels: Record<string, string> = {
@@ -21,7 +23,7 @@ const categoryLabels: Record<string, string> = {
     'sns-global': 'SNS運用（海外）',
 };
 
-export default function WorkCard({ category, title, thumbnail, videoUrl }: WorkCardProps) {
+export default function WorkCard({ category, title, thumbnail, videoUrl, snsPlatform, snsAccount }: WorkCardProps) {
     const label = categoryLabels[category] || category;
 
     return (
@@ -45,6 +47,16 @@ export default function WorkCard({ category, title, thumbnail, videoUrl }: WorkC
                 data-category={category}
                 style={thumbnail ? { backgroundImage: `url(${thumbnail})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
             >
+                {snsPlatform && (
+                    <div className={`sns-thumb-overlay ${snsPlatform}`}>
+                        <span className={`sns-thumb-icon ${snsPlatform}`}>
+                            {snsPlatform === 'instagram' ? '📷' : '♪'}
+                        </span>
+                        {snsAccount && (
+                            <span className="sns-thumb-account">{snsAccount}</span>
+                        )}
+                    </div>
+                )}
                 <span className="work-category">{label}</span>
                 <span className="work-play">▶</span>
             </div>
