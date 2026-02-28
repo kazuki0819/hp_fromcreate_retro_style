@@ -368,13 +368,14 @@ button {
 .hero-kicker {
   font-size: var(--small);
   color: var(--accent2);
-  font-weight: 400;
-  letter-spacing: 0.2em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px var(--accent2-glow);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 6px var(--accent2-glow);
 }
 
+/* ▶ はそのまま活かす */
 .hero-kicker::before {
   content: "▶ ";
   color: var(--accent);
@@ -383,14 +384,14 @@ button {
 
 .hero h1 {
   font-size: var(--h1);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   color: var(--text);
   text-shadow:
-    0 0 10px var(--accent-glow),
-    0 0 20px rgba(0, 255, 65, 0.2),
-    2px 2px 0 rgba(0, 0, 0, 0.8);
+    0 0 2px var(--accent-glow),
+    0 0 12px rgba(0, 255, 65, 0.4),
+    2px 2px 0 rgba(0, 0, 0, 0.9);
 }
 
 .hero-note {
@@ -415,22 +416,23 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
-  border-radius: var(--radius);
-  font-weight: 400;
+  border-radius: 0; /* 角丸をなくす */
+  font-weight: 700;
   font-size: var(--small);
   transition: var(--transition);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   position: relative;
   border: 3px solid;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary {
   background: var(--accent);
   color: var(--bg);
   border-color: var(--accent);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary:hover {
@@ -438,32 +440,31 @@ button {
   color: var(--bg);
   border-color: var(--accent2);
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
-  text-shadow: none;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
 }
 
 .btn-primary:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--accent);
   border-color: var(--accent);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary:hover {
   background: var(--accent);
   color: var(--bg);
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
 }
 
 .btn-secondary:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-ghost {

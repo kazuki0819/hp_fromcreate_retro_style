@@ -9,24 +9,34 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
+            {/* Hero */}
       <section className="hero">
         <RetroEffects />
         <div className="hero-content fade-up is-visible">
-          <p className="hero-kicker">映像 × SNS × コミュニティで可能性を最大化</p>
-          <h1>理想を、現実に。</h1>
+          <p className="hero-kicker">
+            STAGE 1 / START SCREEN
+          </p>
+          <h1>
+            レトロゲームの世界観で魅せる、映像・SNS・コミュニティ運営。
+          </h1>
           <p style={{ marginTop: '1rem', color: 'var(--text-dim)' }}>
-            「やりたい」「こうなりたい」という理想を<br />
-            映像と仕組みの力で、現実に変えていく。
+            映像制作からSNS運用、オンラインコミュニティ運営まで、<br />
+            「遊び心」を軸にした発信をサポートします。<br />
+            ポートフォリオ感覚で気軽に見てください。
           </p>
           <div className="hero-cta">
-            <Link href="/contact" className="btn btn-primary">お問い合わせ</Link>
-            <Link href="/works" className="btn btn-secondary">実績を見る</Link>
-            <Link href="/service" className="btn btn-ghost">サービス詳細 →</Link>
+            <Link href="#works" className="btn btn-primary">
+              PRESS START
+            </Link>
+            <Link href="#about" className="btn btn-secondary">
+              VIEW PROFILE
+            </Link>
+            <Link href="/service" className="btn btn-ghost">
+              サービス詳細 →
+            </Link>
           </div>
         </div>
       </section>
-
       {/* Service */}
       <section className="section">
         <div className="container">
@@ -56,10 +66,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Works */}
-      <section className="section" style={{ background: 'var(--bg-elevated)' }}>
-        <div className="container">
+      <section id="works" className="section" style={{ background: 'var(--bg-elevated)' }}>
+          <div className="container">
           <header className="section-header fade-up is-visible">
             <h2>Works</h2>
             <p>これまで手がけた映像制作の一部をご紹介します</p>
