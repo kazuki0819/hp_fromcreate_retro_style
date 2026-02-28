@@ -9,7 +9,7 @@ export default function HomePage() {
 
   return (
     <>
-            {/* Hero */}
+      {/* Hero */}
       <section className="hero">
         <RetroEffects />
         <div className="hero-content fade-up is-visible">
@@ -41,6 +41,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <header className="section-header fade-up is-visible">
+            <p className="section-kicker">STAGE 2 / SERVICE</p>
             <h2>Service</h2>
             <p>映像・SNS・コミュニティを通して、人と企業の可能性を最大化します</p>
           </header>
@@ -68,8 +69,9 @@ export default function HomePage() {
       </section>
       {/* Works */}
       <section id="works" className="section" style={{ background: 'var(--bg-elevated)' }}>
-          <div className="container">
+        <div className="container">
           <header className="section-header fade-up is-visible">
+            <p className="section-kicker">STAGE 3 / WORKS</p>
             <h2>Works</h2>
             <p>これまで手がけた映像制作の一部をご紹介します</p>
           </header>
@@ -113,6 +115,7 @@ export default function HomePage() {
         <section className="section" style={{ background: 'var(--bg-elevated)' }}>
           <div className="container">
             <header className="section-header fade-up is-visible">
+              <p className="section-kicker">STAGE 4 / BLOG</p>
               <h2>Blog</h2>
               <p>最新のお知らせ・ブログ記事</p>
             </header>
@@ -137,6 +140,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="cta-section">
         <div className="container fade-up is-visible">
+          <p className="section-kicker">STAGE 5 / CONTACT</p>
           <h2>まずはお気軽にご相談ください</h2>
           <p>映像で解決したい課題や、制作のイメージをお聞かせください。<br />ヒアリングを通じて最適なプランをご提案します。</p>
           <Link href="/contact" className="btn btn-primary">制作相談をする</Link>
