@@ -32,7 +32,6 @@ export const staticWorks: WorkData[] = [
     { id: 8, category: 'live', title: 'SPRISE ワンマンライブ 神韻唱歌 ＠なんばハッチ', thumbnail: '/images/works/live-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=HjLb5I4ZoJA' },
     { id: 9, category: 'live', title: '花＊花『あ〜よかった』Billboard Live Osaka', thumbnail: '/images/works/live-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=wG-agBxRsI4' },
     { id: 10, category: 'ad', title: 'アルプスジム 15sec CM', thumbnail: '/images/works/ad-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=fqjTt-Q2eR4' },
-    { id: 11, category: 'ad', title: '広告動画', thumbnail: '/images/works/ad-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=AW-bqPw2lN' },
     { id: 12, category: 'ad', title: '10fields', thumbnail: '/images/works/ad-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=lISRRcCMdBI' },
     { id: 13, category: 'ad', title: 'スマートゼミ サービス紹介動画', thumbnail: '/images/works/ad-4.jpg', videoUrl: 'https://www.youtube.com/watch?v=yQ-QURz2RKc' },
     { id: 14, category: 'ad', title: 'ニイガタ エヌキュア 展示会用サービス紹介動画', thumbnail: '/images/works/ad-5.jpg', videoUrl: 'https://www.youtube.com/watch?v=eqNYS4FdwpE' },
