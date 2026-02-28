@@ -1271,25 +1271,47 @@ button {
   font-size: var(--small);
 }
 
+.price-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.price-table-title {
+  font-size: var(--h3);
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 6px var(--accent-glow);
+}
+
 .price-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 2rem;
+  border: 3px solid var(--border-dim);
+  font-size: var(--small);
 }
 
 .price-table th,
 .price-table td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 2px solid var(--border-dim);
+  border: 2px solid var(--border-dim);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.price-table th {
-  background: var(--bg-card);
+.price-table thead th {
+  background: rgba(0, 255, 65, 0.1);
   color: var(--accent);
-  font-size: var(--small);
-  font-weight: 400;
-  border-bottom: 2px solid var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.price-table tbody th {
+  background: rgba(0, 255, 65, 0.05);
+  color: var(--accent2);
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .price-table td {
