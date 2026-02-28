@@ -1274,6 +1274,7 @@ button {
 .price-table-wrapper {
   overflow-x: auto;
   margin: 2rem 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .price-table-title {
@@ -1286,17 +1287,20 @@ button {
 
 .price-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
   border: 3px solid var(--border-dim);
-  font-size: var(--small);
+  font-size: 0.8rem;
 }
 
 .price-table th,
 .price-table td {
   border: 2px solid var(--border-dim);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.5rem;
   text-align: center;
   vertical-align: middle;
+  white-space: nowrap;
+  font-size: 0.8rem;
 }
 
 .price-table thead th {
@@ -1312,10 +1316,20 @@ button {
   font-weight: 700;
   text-align: left;
   white-space: nowrap;
+  font-size: 0.8rem;
 }
 
 .price-table td {
   color: var(--text);
+}
+
+.price-table td:last-child {
+  white-space: normal;
+  min-width: 140px;
+}
+
+.price-table td[colspan] {
+  white-space: normal;
 }
 
 .price-table tr:hover td {

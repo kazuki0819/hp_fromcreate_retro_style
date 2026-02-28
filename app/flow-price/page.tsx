@@ -59,7 +59,7 @@ export default function FlowPricePage() {
                                     <tr><th>企画</th><td>1万円/本</td><td>1万円/本</td><td>1万円/本</td><td>1万円/本</td></tr>
                                     <tr><th>台本制作</th><td>1万円/本</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
                                     <tr><th>撮影</th><td>4万円/回</td><td>4万円/回</td><td>4万円/回</td><td>4万円/回</td></tr>
-                                    <tr><th>編集</th><td>10分2.5万円（10分以降＋2,000円/分）</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
+                                    <tr><th>編集</th><td style={{ whiteSpace: 'normal' }}>10分2.5万円<br />（10分以降＋2,000円/分）</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
                                     <tr><th>分析</th><td>3万円/回</td><td>3万円/回</td><td>3万円/回</td><td>3万円/回</td></tr>
                                     <tr><th>投稿代行</th><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
                                     <tr><th>初期構築</th><td>5万円〜</td><td>5万円〜</td><td>5万円〜</td><td>5万円〜</td></tr>
