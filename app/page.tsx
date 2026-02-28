@@ -28,7 +28,7 @@ export default function HomePage() {
             <Link href="#works" className="btn btn-primary">
               PRESS START
             </Link>
-            <Link href="#about" className="btn btn-secondary">
+            <Link href="/about" className="btn btn-secondary">
               VIEW PROFILE
             </Link>
             <Link href="/service" className="btn btn-ghost">
