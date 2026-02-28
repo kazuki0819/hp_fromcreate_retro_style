@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="hero-content fade-up is-visible">
           <p className="hero-kicker">映像 × SNS × コミュニティで可能性を最大化</p>
           <h1>理想を、現実に。</h1>
-          <p style={{ marginTop: '1rem', color: 'var(--text-dim)' }}>
+          <p style={{ marginTop: '1.5rem', color: 'var(--text-dim)' }}>
             「やりたい」「こうなりたい」という理想を<br />
             映像と仕組みの力で、現実に変えていく。
           </p>
