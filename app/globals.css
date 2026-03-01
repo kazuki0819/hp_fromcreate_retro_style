@@ -51,22 +51,51 @@
    Retro Keyframes
    ---------------------------------------- */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 @keyframes scanline {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
 }
 
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(2px, -1px); }
-  60% { transform: translate(-1px, -2px); }
-  80% { transform: translate(1px, 1px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, -1px);
+  }
+
+  60% {
+    transform: translate(-1px, -2px);
+  }
+
+  80% {
+    transform: translate(1px, 1px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 @keyframes pixelFadeIn {
@@ -75,10 +104,12 @@
     transform: translateY(8px) scale(0.95);
     filter: brightness(2);
   }
+
   50% {
     opacity: 0.7;
     filter: brightness(1.5);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -87,27 +118,59 @@
 }
 
 @keyframes neonPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     text-shadow: 0 0 4px var(--accent), 0 0 8px var(--accent), 0 0 16px var(--accent);
   }
+
   50% {
     text-shadow: 0 0 2px var(--accent), 0 0 4px var(--accent), 0 0 8px var(--accent);
   }
 }
 
 @keyframes crtFlicker {
-  0% { opacity: 0.97; }
-  5% { opacity: 1; }
-  10% { opacity: 0.98; }
-  15% { opacity: 1; }
-  50% { opacity: 1; }
-  80% { opacity: 0.96; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.97;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.98;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.96;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes starFloat {
-  0%, 100% { transform: translateY(0); opacity: 0.6; }
-  50% { transform: translateY(-3px); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
 }
 
 /* ----------------------------------------
@@ -145,13 +208,11 @@ body::after {
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.08) 2px,
-    rgba(0, 0, 0, 0.08) 4px
-  );
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 4px);
 }
 
 a {
@@ -368,13 +429,14 @@ button {
 .hero-kicker {
   font-size: var(--small);
   color: var(--accent2);
-  font-weight: 400;
-  letter-spacing: 0.2em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px var(--accent2-glow);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 6px var(--accent2-glow);
 }
 
+/* ▶ はそのまま活かす */
 .hero-kicker::before {
   content: "▶ ";
   color: var(--accent);
@@ -383,14 +445,14 @@ button {
 
 .hero h1 {
   font-size: var(--h1);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   color: var(--text);
   text-shadow:
-    0 0 10px var(--accent-glow),
-    0 0 20px rgba(0, 255, 65, 0.2),
-    2px 2px 0 rgba(0, 0, 0, 0.8);
+    0 0 2px var(--accent-glow),
+    0 0 12px rgba(0, 255, 65, 0.4),
+    2px 2px 0 rgba(0, 0, 0, 0.9);
 }
 
 .hero-note {
@@ -404,6 +466,7 @@ button {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 /* ----------------------------------------
@@ -415,22 +478,24 @@ button {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
-  border-radius: var(--radius);
-  font-weight: 400;
+  border-radius: 0;
+  /* 角丸をなくす */
+  font-weight: 700;
   font-size: var(--small);
   transition: var(--transition);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   position: relative;
   border: 3px solid;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary {
   background: var(--accent);
   color: var(--bg);
   border-color: var(--accent);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary:hover {
@@ -438,32 +503,31 @@ button {
   color: var(--bg);
   border-color: var(--accent2);
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
-  text-shadow: none;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
 }
 
 .btn-primary:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--accent);
   border-color: var(--accent);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary:hover {
   background: var(--accent);
   color: var(--bg);
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
 }
 
 .btn-secondary:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
 }
 
 .btn-ghost {
@@ -493,6 +557,15 @@ button {
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.section-kicker {
+  font-size: var(--small);
+  color: var(--accent2);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 4px var(--accent2-glow);
 }
 
 .section-header h2 {
@@ -545,16 +618,18 @@ button {
 
 .card {
   background: var(--bg-card);
-  border-radius: var(--radius);
+  border-radius: 0;
+  /* 角丸をなくす */
   padding: 2rem;
-  border: 2px solid var(--border-dim);
+  border: 3px solid var(--border-dim);
   transition: var(--transition);
   position: relative;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow);
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
   border-color: var(--accent);
 }
 
@@ -598,13 +673,13 @@ button {
   height: 48px;
   background: var(--bg);
   border: 2px solid var(--accent);
-  border-radius: var(--radius);
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  box-shadow: 3px 3px 0 rgba(0, 255, 65, 0.2);
+  box-shadow: 3px 3px 0 rgba(0, 255, 65, 0.3);
 }
 
 /* ----------------------------------------
@@ -618,17 +693,18 @@ button {
 
 .work-card {
   background: var(--bg-card);
-  border-radius: var(--radius);
+  border-radius: 0;
   overflow: hidden;
-  border: 2px solid var(--border-dim);
+  border: 3px solid var(--border-dim);
   transition: var(--transition);
   cursor: pointer;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
 .work-card:hover,
 .work-card:focus {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow);
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
   border-color: var(--accent);
   outline: none;
 }
@@ -835,37 +911,26 @@ button {
    CTA Section
    ---------------------------------------- */
 .cta-section {
-  background: var(--bg-card);
-  border-top: 3px solid var(--accent);
-  border-bottom: 3px solid var(--accent);
+  padding: var(--section-padding) 0;
+  background: var(--bg-elevated);
+  border-top: 3px solid var(--border-dim);
+  border-bottom: 3px solid var(--border-dim);
   text-align: center;
-  padding: var(--section-padding) 1rem;
-  position: relative;
-}
-
-.cta-section::before {
-  content: "════════════════════════════════";
-  display: block;
-  color: var(--accent);
-  opacity: 0.3;
-  letter-spacing: 0;
-  margin-bottom: 2rem;
-  overflow: hidden;
 }
 
 .cta-section h2 {
   font-size: var(--h2);
   margin-bottom: 1rem;
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--accent-glow);
+  text-shadow:
+    0 0 4px var(--accent-glow),
+    2px 2px 0 rgba(0, 0, 0, 0.8);
 }
 
 .cta-section p {
   color: var(--text-muted);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 640px;
+  margin: 0 auto 1.75rem auto;
+  font-size: var(--small);
 }
 
 /* ----------------------------------------
@@ -1207,29 +1272,65 @@ button {
   font-size: var(--small);
 }
 
+.price-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.price-table-title {
+  font-size: var(--h3);
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 6px var(--accent-glow);
+}
+
 .price-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
-  margin-top: 2rem;
+  border: 3px solid var(--border-dim);
+  font-size: 0.8rem;
 }
 
 .price-table th,
 .price-table td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 2px solid var(--border-dim);
+  border: 2px solid var(--border-dim);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 0.8rem;
 }
 
-.price-table th {
-  background: var(--bg-card);
+.price-table thead th {
+  background: rgba(0, 255, 65, 0.1);
   color: var(--accent);
-  font-size: var(--small);
-  font-weight: 400;
-  border-bottom: 2px solid var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.price-table tbody th {
+  background: rgba(0, 255, 65, 0.05);
+  color: var(--accent2);
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 0.8rem;
 }
 
 .price-table td {
   color: var(--text);
+}
+
+.price-table td:last-child {
+  white-space: normal;
+  min-width: 140px;
+}
+
+.price-table td[colspan] {
+  white-space: normal;
 }
 
 .price-table tr:hover td {
@@ -2145,12 +2246,14 @@ button {
   .admin-layout {
     flex-direction: column;
   }
+
   .admin-sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 2px solid var(--border-dim);
     padding: 1rem;
   }
+
   .admin-sidebar nav {
     flex-direction: row;
     flex-wrap: wrap;

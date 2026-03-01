@@ -49,18 +49,48 @@ export default function FlowPricePage() {
                         <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
                             映像の料金は「尺（長さ）」だけで決まるものではありません。撮影日数、ロケーション数、出演者の有無、アニメーション・モーショングラフィックスの量など、さまざまな要素で構成されます。
                         </p>
-                        <table className="price-table">
-                            <thead>
-                                <tr><th>サービス</th><th>目安レンジ（税別）</th><th>含まれる内容例</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Shorts / SNS動画</td><td>15万円〜50万円</td><td>企画・撮影1日・編集・縦型最適化</td></tr>
-                                <tr><td>VP（企業映像）</td><td>50万円〜150万円</td><td>企画・構成・撮影2日・編集・ナレーション</td></tr>
-                                <tr><td>Recruit（採用映像）</td><td>80万円〜200万円</td><td>企画・密着取材・社員インタビュー・編集</td></tr>
-                                <tr><td>MV（ミュージックビデオ）</td><td>50万円〜300万円</td><td>企画・ロケ撮影・アーティスト写真・編集</td></tr>
-                                <tr><td>Event（イベント撮影）</td><td>30万円〜100万円</td><td>マルチカメラ収録・ダイジェスト編集</td></tr>
-                            </tbody>
-                        </table>
+                        <h3 className="price-table-title">料金表：SNS運用代行</h3>
+                        <div className="price-table-wrapper">
+                            <table className="price-table">
+                                <thead>
+                                    <tr><th></th><th>YouTube(横)</th><th>YouTube(縦)</th><th>Instagram</th><th>TikTok</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th>企画</th><td>1万円/本</td><td>1万円/本</td><td>1万円/本</td><td>1万円/本</td></tr>
+                                    <tr><th>台本制作</th><td>1万円/本</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
+                                    <tr><th>撮影</th><td>4万円/回</td><td>4万円/回</td><td>4万円/回</td><td>4万円/回</td></tr>
+                                    <tr><th>編集</th><td style={{ whiteSpace: 'normal' }}>10分2.5万円<br />（10分以降＋2,000円/分）</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
+                                    <tr><th>分析</th><td>3万円/回</td><td>3万円/回</td><td>3万円/回</td><td>3万円/回</td></tr>
+                                    <tr><th>投稿代行</th><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td><td>5,000円/本</td></tr>
+                                    <tr><th>初期構築</th><td>5万円〜</td><td>5万円〜</td><td>5万円〜</td><td>5万円〜</td></tr>
+                                    <tr><th>サムネイル</th><td colSpan={4} style={{ textAlign: 'center' }}>5,000円/枚</td></tr>
+                                    <tr><th>切り抜き(横)</th><td colSpan={4} style={{ textAlign: 'center' }}>1万円/本</td></tr>
+                                    <tr><th>切り抜き(縦)</th><td colSpan={4} style={{ textAlign: 'center' }}>5000円/本</td></tr>
+                                    <tr><th>備考</th><td colSpan={4} style={{ textAlign: 'center' }}>After Effects・3DCGなどは要相談</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 className="price-table-title" style={{ marginTop: '3rem' }}>料金表：映像制作</h3>
+                        <div className="price-table-wrapper">
+                            <table className="price-table">
+                                <thead>
+                                    <tr><th></th><th>編集</th><th>構成</th><th>撮影</th><th>備考</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th>SNS動画(実写・横)</th><td>10分2.5万円</td><td></td><td></td><td>10分以降＋2,000円/分</td></tr>
+                                    <tr><th>SNS動画(非属人・密着・横)</th><td>10分3万円</td><td></td><td></td><td>10分以降＋2,500円/分</td></tr>
+                                    <tr><th>SNS動画(ショート動画)</th><td>5,000円/本</td><td></td><td></td><td>AfterEffects 要相談</td></tr>
+                                    <tr><th>PR動画</th><td>15万円〜</td><td>10万円〜 絵コンテ含む</td><td>10万円〜</td><td>動画尺と工数で変動あり</td></tr>
+                                    <tr><th>広告動画</th><td>15万円〜</td><td>10万円〜 絵コンテ含む</td><td></td><td>動画尺と工数で変動あり</td></tr>
+                                    <tr><th>3DCG関連</th><td>20万円〜</td><td>10万円〜 絵コンテ含む</td><td></td><td>動画尺と工数で変動あり</td></tr>
+                                    <tr><th>サムネイル</th><td colSpan={4} style={{ textAlign: 'center' }}>5,000円/枚</td></tr>
+                                    <tr><th>公式ライン構築</th><td colSpan={4} style={{ textAlign: 'center' }}>30万円〜</td></tr>
+                                    <tr><th>デザイン</th><td colSpan={4} style={{ textAlign: 'center' }}>動画デザイン 30,000円　バナー制作 5,000円/枚・ロゴ制作 50,000円〜・LP制作 25万円〜</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div className="price-note fade-up is-visible">
                             <h3>料金に影響する要素</h3>
                             <ul>
