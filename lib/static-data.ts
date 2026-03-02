@@ -22,8 +22,7 @@ export interface BlogPostData {
 }
 
 export const staticWorks: WorkData[] = [
-    { id: 1, category: 'corporate-pr', title: 'ICIKIN 企業PR映像', thumbnail: '/images/works/corporate-pr-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=foW0jvGxrfw' },
-    { id: 2, category: 'corporate-pr', title: '大電株式会社 PV', thumbnail: '/images/works/corporate-pr-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=gdySLDmhW1Q' },
+        { id: 2, category: 'corporate-pr', title: '大電株式会社 PV', thumbnail: '/images/works/corporate-pr-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=gdySLDmhW1Q' },
     { id: 3, category: 'corporate-pr', title: '旭食品 第70回高知よさこい祭り', thumbnail: '/images/works/corporate-pr-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=49Uj2h4f4Bs' },
     { id: 4, category: 'mv', title: "BWC 'Red Flag' MV", thumbnail: '/images/works/mv-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=WkDJA7cfbEc' },
     { id: 5, category: 'mv', title: 'dope pain - ssd0812', thumbnail: '/images/works/mv-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=si2G0v-2zwI' },
@@ -37,8 +36,7 @@ export const staticWorks: WorkData[] = [
     { id: 14, category: 'ad', title: 'ニイガタ エヌキュア 展示会用サービス紹介動画', thumbnail: '/images/works/ad-5.jpg', videoUrl: 'https://www.youtube.com/watch?v=eqNYS4FdwpE' },
     { id: 15, category: 'ad', title: 'サブスクコーヒー CM', thumbnail: '/images/works/ad-6.jpg', videoUrl: 'https://www.youtube.com/watch?v=_yEifjyd8fc' },
     { id: 16, category: 'animation', title: 'パズドラ公式アニメ「パズミ＆ドラゴンズ」第1話', thumbnail: '/images/works/animation-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=rMKOippMEj8' },
-    { id: 17, category: 'animation', title: 'GOLDEN LEAGUE', thumbnail: '/images/works/animation-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=ghW-IZAl0lA' },
-    { id: 18, category: 'animation', title: 'デコリョーシカ 第1話「ユメリョーシカ」', thumbnail: '/images/works/animation-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=fXomxSg9NT0' },
+        { id: 18, category: 'animation', title: 'デコリョーシカ 第1話「ユメリョーシカ」', thumbnail: '/images/works/animation-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=fXomxSg9NT0' },
     { id: 19, category: '3dcg', title: '3DCG reel', thumbnail: '/images/works/3dcg-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=88DNoxrTE7U' },
     { id: 20, category: '3dcg', title: '3DCG制作動画 Mini keyboard', thumbnail: '/images/works/3dcg-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=oxEV8J8noT4' },
     { id: 21, category: '3dcg', title: 'さむがりペンギンペタコちゃん 3DCG予告', thumbnail: '/images/works/3dcg-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=oFqVHVNWznE' },
