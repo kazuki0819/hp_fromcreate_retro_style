@@ -11,6 +11,10 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'FR0M CREATE | 理想を、現実に。',
   description: '株式会社FR0M CREATE（フロムクリエイト）は、映像制作・SNS運用・クリエイターコミュニティ運営・After Effectsスクール運営を手がけるクリエイティブチームです。',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

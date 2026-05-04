@@ -1,3 +1,8 @@
+# サイト全体を検索エンジンから除外(暫定対応、HP正式公開時に解除)
 User-agent: *
-Disallow: /legal-tokushoho-for-review/
-Disallow: /flow-price-for-review/
+Disallow: /
+
+# 以下、個別指定(Disallow: / で全体ブロック済みのため技術的には冗長だが、
+# 全体公開後も審査用ページは引き続き除外する意図を明示するため残置)
+# Disallow: /legal-tokushoho-for-review/
+# Disallow: /flow-price-for-review/
