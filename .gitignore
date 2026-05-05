@@ -5,7 +5,7 @@ dev.db
 *.db
 fromcreate-base/
 .env
-.env.local
+.env*.local
 # Old HTML files from base copy
 about.html
 contact.html
