@@ -75,12 +75,12 @@ export default function LegalTokushohoForReviewPage() {
               <th style={thStyle}>連絡先/ホームページ</th>
               <td>
                 <a
-                  href="https://univapaycast.com/"
+                  href="https://fromcreate.com/flow-price-for-review/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={linkStyle}
                 >
-                  https://univapaycast.com/
+                  https://fromcreate.com/flow-price-for-review/
                 </a>
               </td>
             </tr>
